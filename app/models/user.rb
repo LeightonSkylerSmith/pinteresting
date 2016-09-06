@@ -6,5 +6,5 @@ class User < ActiveRecord::Base
 
   validates :password, :presence => true,
             :on => :create,
-            :format => {:with => /\A.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\@\#\$\%\^\&\+\=]).*\Z/ }
+            :format => {:with => /\A.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\@\#\$\%\^\&\.\+\=]).*\Z/ }
 end
